@@ -1,0 +1,31 @@
+puts "How many different parts need cutting?"
+n = Integer(gets.chomp) 
+
+puts "Enter the lengths and volumes to be cut below:"
+
+for i in 1..n
+
+  PN = Array.new(n)
+  NO = Array.new(n)
+
+      puts "Length number #{i}?"
+      PN[i] = Integer(gets.chomp)
+      puts "Number to be cut?"
+      NO[i] = Integer(gets.chomp)
+
+end
+
+
+Len = (PN.size) +1
+
+
+for i in 0..Len
+    Var = NO[i].to_i
+      (1..Var).each do
+         print "#{PN[i]} " 
+     end
+end
+
+
+
+gets
